@@ -4,57 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Alpaca/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Alpaca/styles/style.css">
     <title>Alpaca</title>
 </head>
 
 <body>
     <header> <h1>Monte sua Alpaca</h1></header>
     
-    <main>      
-
-        
+    <main>          
 
         <section class="photo-alpaca">
-            <div class="avatar">
+            <div id='avatar' class="avatar">
                 <!-- <img src="Alpaca/image/backgrounds/alpaca.JPG" alt=""> -->
-                <img src="Alpaca/image/backgrounds/blue50.png" alt="">
-                <img src="Alpaca/image/neck/bend-backward.png" alt="">
-                <img src="Alpaca/image/nose/default.png" alt="">
-                <img src="Alpaca/image/mouth/eating.png" alt="">
-                <img src="Alpaca/image/hair/fancy.png" alt="">
-                <img src="Alpaca/image/ears/tilt-backward.png" alt="">
-                <img src="Alpaca/image/eyes/smart.png" alt="">
-                <img src="Alpaca/image/leg/bubble-tea.png" alt="">
-                <img src="Alpaca/image/accessories/earings.png" alt="">
-            </div>
+                <img id="imgBack" src="Alpaca/assets/backgrounds/default.png" alt="backgrounds" />
+                <img id="imgEars" src="Alpaca/assets/ears/tilt-backward.png" alt="" />
+                <img id="imgNeck" src="Alpaca/assets/neck/bend-backward.png" alt="" />
+                <img id="imgNose" src="Alpaca/assets/nose/default.png" alt="" />
+                <img id="imgHair" src="Alpaca/assets/hair/bang.png" alt="" />
+                <img id="imgEyes" src="Alpaca/assets/eyes/panda.png" alt="" />
+                <img id="imgMouth" src="Alpaca/assets/mouth/eating.png" alt="" />
+                <img id="imgLeg" src="Alpaca/assets/leg/game-console.png" alt="" />
+                <img id="imgAcces" src="Alpaca/assets/accessories/flower.png" alt="" />
+            </div>      
+            
             <button type="button" class="btn-random">Randomize</button>
         </section>
 
         <section class="style-alpaca">
             <div class="box-text">
                 <h2>Monte sua Alpaca</h2>
-                <button type="button">Orelha</button>
-                <button type="button">Olhos</button>
-                <button type="button">Cabelo</button>
-                <button type="button">Braço</button>
-                <button type="button">Boca</button>
-                <button type="button">Pescoço</button>
-                <button type="button">Nariz</button>
-                
+                <button id="id-backgrounds" class="btn" type="button" name="backgrounds">Fundo</button>
+                <button id="id-ears" class="btn" type="button" name="ears">Orelhas</button>
+                <button id="id-eyes" class="btn" type="button" name="eyes">Olhos</button>
+                <button id="id-hair" class="btn" type="button" name="hair">Cabelo</button>
+                <button id="id-leg" class="btn" type="button" name="leg">Perna</button>
+                <button id="id-mouth" class="btn" type="button" name="mouth">Boca</button>
+                <button id="id-neck" class="btn" type="button" name="neck">Pescoço</button>
+                <button id="id-nose" class="btn" type="button" name="nose">Nariz</button>
+                <button id="id-accessories" class="btn" type="button" name="accessories">Acessórios</button>                
             </div>
+            
             <hr>
             <div class="box-text">
-              <h2>Acessórios</h3>
-                <button type="button">Fone</button>
-                <button type="button">Brincos</button>
-                <button type="button">Flôr</button>
-                <button type="button">Óculos</button>
-                <button type="button">Fundo</button>               
+              <h2>Selecione os Estilos</h3>
+                <div id="contentBtn" class="button"></div>              
             </div>
         </section>
     
     </main>
-    
+    <script src="./Alpaca/script/index.js"></script>    
 </body>
 </html>
