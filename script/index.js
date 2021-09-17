@@ -1,12 +1,15 @@
-import("./constants").then((module) => {
-    const constants = module.default;
-  
+//import("./constants.js").then((module) => {
+    //const constants = module.default;
+
+  import * as constants from "./constants.js"
+
     function geraBtnGeral(btnGeral) {
       btnGeral.forEach((item) => {
         const button = document.getElementById(`id-${item}`);
         button.addEventListener("click", exibiBtn);
       });
     }
+
     geraBtnGeral(constants.btnGeral);
   
     function styleBtn(name, src) {
@@ -158,4 +161,4 @@ import("./constants").then((module) => {
   
     // const salvar = document.getElementById(`btn-download`);
     // salvar.addEventListener("click", salvaAvatar);
-  });
+  //});
