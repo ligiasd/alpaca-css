@@ -161,4 +161,4 @@
   
     // const salvar = document.getElementById(`btn-download`);
     // salvar.addEventListener("click", salvaAvatar);
-  //});
+  // });
